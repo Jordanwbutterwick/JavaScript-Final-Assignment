@@ -1,3 +1,6 @@
+// Jordan Butterwick final JS Assignment
+// February 19, 2019
+
 // dropdown menu scripts
 function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -17,6 +20,7 @@ window.onclick = function(event) {
 };
 
 // main page button scripts
+// scrolls the viewport down to the content, skipping the hero
 window.onload = function startButtonFunc() {
   if (document.getElementById("startButton")) {
     let startButton = document.getElementById("startButton");
@@ -24,13 +28,17 @@ window.onload = function startButtonFunc() {
       window.scroll(0, 1100);
     });
   } else {
+    /* log to show the function isn't running and won't throw an error
+     if you're on a page without the button*/
     console.log("Not purchase page, start button functionality revoked");
   }
 };
 
+// Agent Name + Number Generator
 window.onload = function agentFinderFunc() {
   if (document.getElementById("results")) {
     let findAgent = document.getElementById("findAgent");
+    // name and number arrays
     let agentName = [
       "Jordan",
       "Jake",
@@ -62,6 +70,9 @@ window.onload = function agentFinderFunc() {
       "(555)-555-9960",
       "(555)-555-9837"
     ];
+    /* eventlistener and random math function to decide what 
+    name and number are displayed on the page*/
+
     findAgent.addEventListener("click", function contacts() {
       let i = Math.floor(Math.random() * 12 + 1);
       let results = document.getElementById("results");
