@@ -94,7 +94,7 @@ a {
 }
 
 .dropdown-content a {
-  color: black;
+  color: #222222;
   font-family: "Raleway", sans-serif;
   padding: 12px 16px;
   text-decoration: none;
@@ -112,32 +112,40 @@ a {
 /* ------hero styles------- */
 
 .hero {
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 75%, 95% 55%, 95% 0%, 5% 0%);
+  background: radial-gradient(rgba(255, 239, 96, 0.356), rgba(255, 60, 118.5)),
+    linear-gradient(rgba(255, 60, 118, 0.438), rgba(240, 32, 111, 0.404)),
+    url("../assets/hellas2.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }
-.hero-background {
-  -webkit-clip-path: polygon(0px 420px, 960px 265px, 960px 0px, 0px 0px);
-  clip-path: polygon(0px 420px, 960px 265px, 960px 0px, 0px 0px);
-  background-image: url("../assets/hellas.jpg"),
-    linear-gradient(rgba(247, 57, 57, 0.555) rgba(255, 45, 150, 0.521));
+
+.hero h1 {
+  color: #111111;
 }
 
-#startButton {
-  background-color: #ffffff00;
-  color: #3d3d3d;
-  font-family: "raleway", sans-serif;
-  font-size: 1.4em;
-  border-color: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#startButton:hover,
-#startButton:focus {
-  background-color: #adadad6c;
+@media (max-width: 1000px) {
+  .hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
 }
 
 /* ------ card styles -------- */
@@ -145,12 +153,65 @@ a {
 .card-row {
   display: flex;
   flex-flow: row wrap;
-  padding: 50px;
+  padding: 5%;
   justify-content: center;
 }
 
 .card {
   width: 40%;
   height: 500px;
-  margin: 50px;
+  margin: 5%;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 90%;
+  }
+}
+
+/*--------- button styles ---------*/
+
+#startButton {
+  background-color: #ffffff00;
+  color: #222222;
+  font-family: "raleway", sans-serif;
+  font-size: 1.4em;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#findAgent {
+  background-color: #ffffff00;
+  color: #222222;
+  font-family: "raleway", sans-serif;
+  font-size: 1.4em;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#findAgent:hover,
+#findAgent:focus {
+  background-color: #adadad6c;
+}
+
+#startButton:hover,
+#startButton:focus {
+  background-color: #adadad6c;
+}
+
+/* ---------About Page Styles ---------- */
+
+.about-content p {
+  color: #222222;
+  font-family: "raleway", sans-serif;
+  font-size: 1.2em;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
