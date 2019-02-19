@@ -125,7 +125,10 @@ a {
   height: 100vh;
   -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
   clip-path: polygon(5% 75%, 95% 55%, 95% 0%, 5% 0%);
-  background: radial-gradient(rgba(255, 239, 96, 0.356), rgba(255, 60, 118.5)),
+  background: radial-gradient(
+      rgba(255, 239, 96, 0.233),
+      rgba(255, 60, 118, 0.384)
+    ),
     linear-gradient(rgba(255, 60, 118, 0.438), rgba(240, 32, 111, 0.404)),
     url("../assets/hellas2.png");
   background-position: center;
@@ -147,6 +150,83 @@ a {
     margin-right: 15%;
   }
 }
+.purchase-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.purchase-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 75%, 95% 55%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(160, 255, 96, 0.123),
+      rgba(60, 255, 157, 0.164)
+    ),
+    linear-gradient(rgba(60, 209, 255, 0.185), rgba(32, 240, 77, 0.137)),
+    url("../assets/purchase.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.purchase-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .purchase-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+.about-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(88, 243, 191, 0.137),
+      rgba(202, 66, 243, 0.425)
+    ),
+    linear-gradient(rgba(60, 144, 255, 0.438), rgba(32, 240, 195, 0.247)),
+    url("../assets/about.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.about-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .about-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
 
 /* ------ card styles -------- */
 
@@ -157,10 +237,164 @@ a {
   justify-content: center;
 }
 
-.card {
-  width: 40%;
-  height: 500px;
-  margin: 5%;
+/* kraken mare */
+.kraken-card {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.kraken-card-background {
+  width: 45vw;
+  height: 45vh;
+  -webkit-clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(255, 239, 96, 0.356),
+      rgba(213, 255, 60, 0.37)
+    ),
+    linear-gradient(rgba(128, 60, 255, 0.37), rgba(213, 255, 25, 0.295)),
+    url("../assets/kraken.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.kraken-card h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .kraken-card h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* hellas planitia */
+.hellas-card {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.hellas-card-background {
+  width: 45vw;
+  height: 45vh;
+  -webkit-clip-path: polygon(5% 55%, 95% 75%, 95% 0%, 5% 0%);
+  clip-path: polygon(5% 55%, 95% 75%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(255, 239, 96, 0.233),
+      rgba(255, 60, 118, 0.384)
+    ),
+    linear-gradient(rgba(255, 60, 118, 0.438), rgba(240, 32, 111, 0.404)),
+    url("../assets/hellas2.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.hellas-card h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .hellas-card h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* mare tranquillitis */
+.tranquility-card {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.tranquility-card-background {
+  width: 45vw;
+  height: 45vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 65%, 95% 75%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(88, 243, 191, 0.137),
+      rgba(202, 66, 243, 0.534)
+    ),
+    linear-gradient(rgba(60, 144, 255, 0.438), rgba(32, 240, 195, 0.247)),
+    url("../assets/tranquility.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.tranquility-card h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .tranquility-card h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* outpost 17 */
+.outpost-card {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.outpost-card-background {
+  width: 45vw;
+  height: 45vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 75%, 95% 55%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(138, 65, 172, 0.116),
+      rgba(31, 134, 252, 0.342)
+    ),
+    linear-gradient(rgba(96, 60, 255, 0.082), rgba(240, 32, 112, 0.034)),
+    url("../assets/outpost.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.outpost-card h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .outpost-card h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -168,7 +402,6 @@ a {
     width: 90%;
   }
 }
-
 /*--------- button styles ---------*/
 
 #startButton {
@@ -214,4 +447,165 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+/* -----------destination styles ----------- */
+/* kraken mare */
+.kraken-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.kraken-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  clip-path: polygon(5% 86%, 95% 45%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(255, 239, 96, 0.356),
+      rgba(213, 255, 60, 0.37)
+    ),
+    linear-gradient(rgba(128, 60, 255, 0.37), rgba(213, 255, 25, 0.295)),
+    url("../assets/kraken.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.kraken-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .kraken-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* hellas planitia */
+.hellas-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.hellas-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(5% 55%, 95% 75%, 95% 0%, 5% 0%);
+  clip-path: polygon(5% 55%, 95% 75%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(255, 239, 96, 0.233),
+      rgba(255, 60, 118, 0.384)
+    ),
+    linear-gradient(rgba(255, 60, 118, 0.438), rgba(240, 32, 111, 0.404)),
+    url("../assets/hellas2.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.hellas-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .hellas-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* mare tranquillitis */
+.tranquility-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.tranquility-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 65%, 95% 75%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(88, 243, 191, 0.137),
+      rgba(202, 66, 243, 0.534)
+    ),
+    linear-gradient(rgba(60, 144, 255, 0.438), rgba(32, 240, 195, 0.247)),
+    url("../assets/tranquility.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.tranquility-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .tranquility-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+}
+
+/* outpost 17 */
+.outpost-hero {
+  height: 100vh;
+  width: 100%;
+  margin: 0, auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.outpost-hero-background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0px 75%, 100% 65%, 100% 0px, 0px 0px);
+  clip-path: polygon(5% 75%, 95% 55%, 95% 0%, 5% 0%);
+  background: radial-gradient(
+      rgba(138, 65, 172, 0.116),
+      rgba(31, 134, 252, 0.342)
+    ),
+    linear-gradient(rgba(96, 60, 255, 0.082), rgba(240, 32, 112, 0.034)),
+    url("../assets/outpost.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.outpost-hero h1 {
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .outpost-hero h1 {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
 }

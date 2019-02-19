@@ -28,44 +28,46 @@ window.onload = function startButtonFunc() {
   }
 };
 
-let findAgent = document.getElementById("findAgent");
-findAgent.addEventListener("click", function contacts() {
-  let agentName = [
-    "Jordan",
-    "Jake",
-    "Jessy",
-    "James",
-    "Adrian",
-    "Anton",
-    "Elena",
-    "Malkeet",
-    "Dani",
-    "Doug",
-    "Kuol",
-    "Kiefer",
-    "Muhommad"
-  ];
-
-  let agentNumbers = [
-    "(555)-555-9846",
-    "(555)-555-2365",
-    "(555)-555-7357",
-    "(555)-555-6779",
-    "(555)-555-1246",
-    "(555)-555-8325",
-    "(555)-555-9042",
-    "(555)-555-0568",
-    "(555)-555-3175",
-    "(555)-555-7653",
-    "(555)-555-3687",
-    "(555)-555-9960",
-    "(555)-555-9837"
-  ];
+window.onload = function agentFinderFunc() {
   if (document.getElementById("results")) {
-    let i = Math.floor(Math.random() * 13 + 1);
-    let results = document.getElementById("results");
-    results.innerHTML = agentName[i] + " " + agentNumbers[i];
+    let findAgent = document.getElementById("findAgent");
+    let agentName = [
+      "Jordan",
+      "Jake",
+      "Jessy",
+      "James",
+      "Adrian",
+      "Anton",
+      "Elena",
+      "Malkeet",
+      "Dani",
+      "Doug",
+      "Kuol",
+      "Kiefer",
+      "Muhommad"
+    ];
+
+    let agentNumbers = [
+      "(555)-555-9846",
+      "(555)-555-2365",
+      "(555)-555-7357",
+      "(555)-555-6779",
+      "(555)-555-1246",
+      "(555)-555-8325",
+      "(555)-555-9042",
+      "(555)-555-0568",
+      "(555)-555-3175",
+      "(555)-555-7653",
+      "(555)-555-3687",
+      "(555)-555-9960",
+      "(555)-555-9837"
+    ];
+    findAgent.addEventListener("click", function contacts() {
+      let i = Math.floor(Math.random() * 12 + 1);
+      let results = document.getElementById("results");
+      results.innerHTML = agentName[i] + " " + agentNumbers[i];
+    });
   } else {
     console.log("Not about page");
   }
-});
+};
