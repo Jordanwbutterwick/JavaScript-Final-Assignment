@@ -23,6 +23,7 @@ window.onclick = function(event) {
 // scrolls the viewport down to the content, skipping the hero
 window.onload = function startButtonFunc() {
   if (document.getElementById("startButton")) {
+    console.log("startbutton func good");
     let startButton = document.getElementById("startButton");
     startButton.addEventListener("click", function jumpScroll() {
       window.scroll(0, 1100);
@@ -81,4 +82,35 @@ window.onload = function agentFinderFunc() {
   } else {
     console.log("Not about page");
   }
+};
+
+// footer date function
+
+window.onload = function getDate() {
+  var today = new Date();
+
+  function month() {
+    let month = today.getMonth();
+    let monthList = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+
+    let monthName = monthList[month];
+    console.log(monthName);
+    var date = monthName + "-" + today.getDate() + "-" + today.getFullYear();
+    var dateBox = document.getElementById("date");
+    dateBox.innerHTML = date;
+  }
+  month();
 };
